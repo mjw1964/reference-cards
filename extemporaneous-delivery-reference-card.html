@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TFGW Talk Prep — Extemporaneous Delivery Reference Card</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px 20px;
+    color: #2B2829;
+  }
+
+  .card {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  }
+
+  /* Header */
+  .header {
+    background: #191347;
+    padding: 28px 36px 22px;
+    border-bottom: 5px solid #E45927;
+  }
+
+  .header-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #FDB715;
+    margin-bottom: 6px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.2;
+  }
+
+  .header-sub {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #aaa;
+    font-style: italic;
+  }
+
+  /* Body */
+  .body {
+    padding: 30px 36px;
+  }
+
+  /* Core principle banner */
+  .core-banner {
+    background: #FFF4EC;
+    border-left: 5px solid #E45927;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+  }
+
+  .core-banner p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2B2829;
+  }
+
+  .core-banner strong {
+    color: #E45927;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #E45927;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #f0e0d8;
+  }
+
+  /* Prep steps */
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .step {
+    background: #191347;
+    border-radius: 8px;
+    padding: 16px 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    font-size: 20px;
+    font-weight: 800;
+    color: #FDB715;
+    line-height: 1;
+    min-width: 24px;
+  }
+
+  .step-content {}
+
+  .step-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+  }
+
+  .step-sub {
+    font-size: 11px;
+    color: #aab;
+    line-height: 1.5;
+  }
+
+  /* Benefits row */
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .benefit {
+    background: #f9f4ff;
+    border: 1.5px solid #e8dff7;
+    border-radius: 8px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  .benefit-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .benefit-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #191347;
+    line-height: 1.4;
+  }
+
+  /* Table */
+  .trap-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+    font-size: 13px;
+  }
+
+  .trap-table thead tr {
+    background: #E45927;
+  }
+
+  .trap-table thead th {
+    color: #fff;
+    font-weight: 700;
+    padding: 9px 14px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .trap-table tbody tr:nth-child(even) { background: #fafafa; }
+  .trap-table tbody tr:nth-child(odd) { background: #fff; }
+
+  .trap-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .trap-table td:first-child {
+    font-weight: 600;
+    color: #E45927;
+    width: 36%;
+  }
+
+  /* Impromptu box */
+  .impromptu {
+    background: #f0f4ff;
+    border: 1.5px solid #c8d4f0;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+  }
+
+  .impromptu-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #191347;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .impromptu ol {
+    padding-left: 20px;
+  }
+
+  .impromptu ol li {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: #2B2829;
+  }
+
+  .impromptu-scripture {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E45927;
+  }
+
+  /* Bottom line */
+  .bottom-line {
+    background: #191347;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 8px;
+  }
+
+  .bottom-line p {
+    font-size: 13.5px;
+    color: #eee;
+    line-height: 1.7;
+  }
+
+  .bottom-line strong {
+    color: #FDB715;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 16px 36px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left { font-size: 11px; color: #aaa; }
+  .footer-right { font-size: 11px; font-weight: 700; color: #E45927; letter-spacing: 1px; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .card { box-shadow: none; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="header">
+    <div class="header-label">TFGW Talk Prep · Study 27</div>
+    <h1>Extemporaneous Delivery</h1>
+    <div class="header-sub">Benefit From Theocratic Ministry School Education · p. 117</div>
+  </div>
+
+  <div class="body">
+
+    <!-- Core Principle -->
+    <div class="core-banner">
+      <p><strong>Core Principle:</strong> Extemporaneous delivery is not winging it — it is preparing ideas so thoroughly that the right words come naturally. Prepare the structure deeply; let the words take care of themselves.</p>
+    </div>
+
+    <!-- How to Prepare -->
+    <div class="section-title">How to Prepare an Extemporaneous Talk</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Select Theme &amp; Main Points</div>
+          <div class="step-sub">2 points for a short talk; 4–5 for a longer one. No more. Keep the structure lean.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Note Scriptures, Illustrations &amp; Key Arguments</div>
+          <div class="step-sub">Under each main point — not full sentences. Anchor each point to its evidence.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Plan Intro &amp; Conclusion</div>
+          <div class="step-sub">You may write out 1–2 sentences here. These are the moments requiring strongest audience contact.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Review Ideas — Not Words</div>
+          <div class="step-sub">Run through each main point mentally until one easily follows the other. Never rehearse word-for-word.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Four Benefits -->
+    <div class="section-title">Four Key Benefits</div>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="benefit-icon">👁️</div>
+        <div class="benefit-label">Maximum Eye Contact with Audience</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">💬</div>
+        <div class="benefit-label">Warm, Conversational Delivery</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">🔄</div>
+        <div class="benefit-label">Flexibility to Adjust on the Fly</div>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-label">Stimulates Your Own Thinking</div>
+      </div>
+    </div>
+
+    <!-- Pitfalls Table -->
+    <div class="section-title">Pitfalls &amp; Fixes</div>
+    <table class="trap-table">
+      <thead>
+        <tr>
+          <th>Pitfall</th>
+          <th>The Fix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Running overtime</td>
+          <td>Mark time allocations on your outline per section — and stick to them.</td>
+        </tr>
+        <tr>
+          <td>Overconfidence (experienced speakers)</td>
+          <td>Approach every assignment prayerfully. Jehovah is the Grand Instructor — that demands preparation. (Isa. 30:20)</td>
+        </tr>
+        <tr>
+          <td>Fear of forgetting</td>
+          <td>Prepare well and rely on Jehovah's spirit. The solution is thorough idea review, not word memorization. (John 14:26)</td>
+        </tr>
+        <tr>
+          <td>Over-reliance on notes</td>
+          <td>Mark your outline — highlight only key words and scripture citations. Glance, don't read.</td>
+        </tr>
+        <tr>
+          <td>Too formal / written-sounding</td>
+          <td>Never write out the full talk first. Writing locks in formal language. Build from an outline only.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Impromptu Protocol -->
+    <div class="impromptu">
+      <div class="impromptu-title">Impromptu Situations — When You Have No Time to Prepare</div>
+      <ol>
+        <li>Pause and pray silently first — imitate Nehemiah (Neh. 2:4).</li>
+        <li>Quickly select 1–2 key points your explanation should include.</li>
+        <li>Decide which scripture(s) you will use to support those points.</li>
+        <li>Plan a tactful opening so the person is willing to listen — then begin.</li>
+      </ol>
+      <div class="impromptu-scripture">1 Pet. 3:15 · Matt. 10:19, 20 · Acts 4:19, 20 · Acts 7:2–53</div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="bottom-line">
+      <p><strong>Bottom Line:</strong> The goal is not perfect wording — it is a genuine heart-to-heart talk. <strong>People respond to ideas presented simply, not to polished sentences they can't feel.</strong> Prepare the ideas deeply, trust Jehovah's spirit, and the words will come. The more you practice this in congregation assignments, the more natural it will be when it matters most — in the field and under pressure.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">TFGW Personal Study Reference · Study 27</div>
+    <div class="footer-right">EXTEMPORANEOUS DELIVERY</div>
+  </div>
+
+</div>
+</body>
+</html>
